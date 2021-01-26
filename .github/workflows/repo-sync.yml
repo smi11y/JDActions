@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-sazs34-scripts
+name: sync-sdogsq-scripts
 on:
   schedule:
     - cron: '5 15 * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-sazs34-scripts
+    types: sync-sdogsq-scripts
 jobs:
   repo-sync:
     env:
@@ -19,11 +19,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync sazs34-scripts
+      - name: sync sdogsq-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/an0na/DontForkXieXie.git"
-          source_branch: "master"
+          source_repo: "https://github.com/sdogsq/JDActions.git"
+          source_branch: "main"
           destination_branch: "main"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
