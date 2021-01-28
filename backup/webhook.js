@@ -37,7 +37,7 @@ for env https://docs.github.com/cn/free-pro-team@latest/actions/reference/contex
 
 let ACTIONS_TRIGGER_TOKEN = process.env.ACTIONS_TRIGGER_TOKEN; //Personal access tokens，申请教程:https://www.jianshu.com/p/bb82b3ad1d11 记得勾选repo权限就行
 let TRIGGER_KEYWORDS = process.env.TRIGGER_KEYWORDS; //.github/workflows/路径里面yml文件里面repository_dispatch项目的types值，例如jd_fruit.yml里面的值为fruit
-let GITHUBUSER = process.env.GITHUBUSER; //github用户名，例:an0na
+let GITHUBUSER = process.env.GITHUBUSER; //github用户名，例:shuye72
 let REPO = process.env.REPO; //需要触发的 Github Action 所在的仓库名称 例:scripts
 let SYSTEM_ENV = [
     //本身所需要的环境变量
